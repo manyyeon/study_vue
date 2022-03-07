@@ -31,6 +31,12 @@ const routes = [
         /* webpackChunkName: "contact", webpackPrefetch:true */ "../views/ContactView.vue"
       ),
   },
+  {
+    path: "/basic",
+    name: "basic",
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/BasicView.vue"),
+  },
 ];
 
 const router = createRouter({
