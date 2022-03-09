@@ -37,6 +37,12 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/BasicView.vue"),
   },
+  {
+    path: "/htmlString",
+    name: "htmlString",
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/DataBindingHtml.vue"),
+  },
 ];
 
 const router = createRouter({
