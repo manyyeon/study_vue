@@ -1,10 +1,10 @@
 <template>
     <div>
-        <h1>Hello, {{lastName}}{{firstName}}</h1>
-        <h1>Hello, {{lastName}}{{firstName}}</h1>
-        <h1>Hello, {{lastName}}{{firstName}}</h1>
-        <h1>Hello, {{lastName}}{{firstName}}</h1>
-        <h1>Hello, {{lastName}}{{firstName}}</h1>
+        <h1>Hello, {{getFullName()}}</h1>
+        <h1>Hello, {{getFullName()}}</h1>
+        <h1>Hello, {{getFullName()}}</h1>
+        <h1>Hello, {{getFullName()}}</h1>
+        <h1>Hello, {{getFullName()}}</h1>
     </div>
 </template>
 
@@ -22,10 +22,11 @@ export default {
     mounted() {},
     unmounted() {},
     methods: {
-    
+        getFullName() {
+            return this.lastName + this.firstName;
         }
     }
-
+}
 </script>
 
 <style scoped>
