@@ -1,10 +1,6 @@
 <template>
     <div>
-        <select v-model="city" @change="changeSelect">
-            <option value="서울">서울</option>
-            <option value="부산">부산</option>
-            <option value="제주">제주</option>
-        </select>
+        <input type="text" v-model="textValue" @keyup.enter="showValue" />
     </div>
 </template>
 
@@ -13,7 +9,7 @@ export default {
     components: {},
     data() {
         return {
-            city: ""
+            textValue: ""
         }
     },
     setup() {},
@@ -21,8 +17,9 @@ export default {
     mounted() {},
     unmounted() {},
     methods: {
-        changeSelect() {
-            alert(this.city)
+        showValue() {
+            // tab, delete, esc, space, up, down, left, right
+            alert(this.textValue);
         }
     }
 }
