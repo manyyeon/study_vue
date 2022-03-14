@@ -1,10 +1,12 @@
 <template>
     <div>
-        <h1>Hello, {{getFullName()}}</h1>
-        <h1>Hello, {{getFullName()}}</h1>
-        <h1>Hello, {{getFullName()}}</h1>
-        <h1>Hello, {{getFullName()}}</h1>
-        <h1>Hello, {{getFullName()}}</h1>
+        <input type="text" v-model="lastName" />
+        <input type="text" v-model="firstName" />
+        <h1>Hello, {{fullName}}</h1>
+        <h1>Hello, {{fullName}}</h1>
+        <h1>Hello, {{fullName}}</h1>
+        <h1>Hello, {{fullName}}</h1>
+        <h1>Hello, {{fullName}}</h1>
     </div>
 </template>
 
@@ -17,14 +19,17 @@ export default {
             lastName: '유',
         }
     },
+    computed: {
+        fullName() {
+            return this.lastName + this.firstName;
+        }
+    },
     setup() {},
     created() {},
     mounted() {},
     unmounted() {},
     methods: {
-        getFullName() {
-            return this.lastName + this.firstName;
-        }
+
     }
 }
 </script>
