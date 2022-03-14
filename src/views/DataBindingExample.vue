@@ -1,6 +1,7 @@
 <template>
     <div>
-        <h1 v-show="bRender">bRender가 true이면 렌더링됩니다.</h1>
+        <button type="button" v-on:click="increaseCounter">Add 1</button>
+        <p>The count is : {{counter}}</p>
     </div>
 </template>
 
@@ -9,7 +10,7 @@ export default {
     components: {},
     data() {
         return {
-            bRender: false
+            counter: 0
         }
     },
     setup() {},
@@ -17,7 +18,9 @@ export default {
     mounted() {},
     unmounted() {},
     methods: {
-
+        increaseCounter() {
+            this.counter = this.counter + 1
+        }
     }
 }
 </script>
