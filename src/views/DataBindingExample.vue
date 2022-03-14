@@ -1,8 +1,6 @@
 <template>
     <div>
-        <h1 v-if="type=='A'">A</h1>
-        <h1 v-else-if="type=='B'">B</h1>
-        <h1 v-else>Other</h1>
+        <h1 v-show="bRender">bRender가 true이면 렌더링됩니다.</h1>
     </div>
 </template>
 
@@ -11,7 +9,7 @@ export default {
     components: {},
     data() {
         return {
-            type: 'A'
+            bRender: false
         }
     },
     setup() {},
