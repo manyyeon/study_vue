@@ -1,6 +1,10 @@
 <template>
     <div>
-        <input type="text" v-model="textValue" @keyup.enter="showValue" />
+        <h1>Hello, {{lastName}}{{firstName}}</h1>
+        <h1>Hello, {{lastName}}{{firstName}}</h1>
+        <h1>Hello, {{lastName}}{{firstName}}</h1>
+        <h1>Hello, {{lastName}}{{firstName}}</h1>
+        <h1>Hello, {{lastName}}{{firstName}}</h1>
     </div>
 </template>
 
@@ -9,7 +13,8 @@ export default {
     components: {},
     data() {
         return {
-            textValue: ""
+            firstName: '재석',
+            lastName: '유',
         }
     },
     setup() {},
@@ -17,12 +22,10 @@ export default {
     mounted() {},
     unmounted() {},
     methods: {
-        showValue() {
-            // tab, delete, esc, space, up, down, left, right
-            alert(this.textValue);
+    
         }
     }
-}
+
 </script>
 
 <style scoped>
