@@ -1,6 +1,6 @@
 <template>
     <div>
-        <button type="button" v-on:click="increaseCounter">Add 1</button>
+        <button type="button" @click="one(), two()">Add 1</button>
         <p>The count is : {{counter}}</p>
     </div>
 </template>
@@ -18,8 +18,11 @@ export default {
     mounted() {},
     unmounted() {},
     methods: {
-        increaseCounter() {
-            this.counter = this.counter + 1
+        one() {
+            alert("One");
+        },
+        two() {
+            alert("Two");
         }
     }
 }
