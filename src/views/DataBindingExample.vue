@@ -26,7 +26,8 @@ export default {
   methods: {
     saveUserInfo() {
       if (this.userInfo.name == "") {
-        return alert("사용자 이름을 입력하세요.");
+        // return alert("사용자 이름을 입력하세요.");
+        return this.$swal("사용자 이름을 입력하세요");
       }
       if (this.userInfo.age == 0 || this.age == "") {
         return alert("나이를 입력하세요.");
