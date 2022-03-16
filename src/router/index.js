@@ -49,6 +49,12 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/DataBindingExample.vue"),
   },
+  {
+    path: "/serverdata",
+    name: "ServerData",
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/ServerData.vue"),
+  },
 ];
 
 const router = createRouter({
