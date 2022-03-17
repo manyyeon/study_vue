@@ -1,17 +1,29 @@
 <template>
   <div>
-    <PageTitle title="부모 컴포넌트에서 전송할 페이지 타이틀" />
+    <page-title :title="title" />
+    <ChildComponent
+      :likes="23"
+      :isOk="true"
+      :commentIds="commentIds"
+      :author="author"
+    />
   </div>
 </template>
 
 <script>
 import PageTitle from "../components/PageTitle.vue";
+import ChildComponent from "./ChildComponent.vue";
 
 export default {
-  components: { PageTitle },
+  components: { "page-title": PageTitle, ChildComponent },
   data() {
     return {
-      sampleData: "",
+      title: "부모 컴포넌트에서 전송할 타이틀",
+      commentIds: [1, 5, 2, 3],
+      author: {
+        name: "홍길동",
+        company: "회사",
+      },
     };
   },
   setup() {},
