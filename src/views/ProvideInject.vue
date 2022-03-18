@@ -1,6 +1,6 @@
 <template>
   <div>
-    <ProvideInjectChild :itemLength="items.length" />
+    <ProvideInjectChild />
   </div>
 </template>
 
@@ -11,14 +11,15 @@ export default {
   components: { ProvideInjectChild },
   data() {
     return {
-      items: ["A", "B"],
+      items: ["A", "B", "C"],
     };
   },
-  setup() {},
-  created() {},
-  mounted() {},
-  unmounted() {},
-  methods: {},
+  provide() {
+    return {
+      itemLength: this.items.length,
+      items: this.items,
+    };
+  },
 };
 </script>
 
