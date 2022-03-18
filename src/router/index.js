@@ -55,6 +55,12 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/ServerData.vue"),
   },
+  {
+    path: "/slot",
+    name: "SlotUserModalLayout",
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/SlotUseModalLayout.vue"),
+  },
 ];
 
 const router = createRouter({
