@@ -61,6 +61,12 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/SlotUseModalLayout.vue"),
   },
+  {
+    path: "/provideInject",
+    name: "ProvideInject",
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/ProvideInject.vue"),
+  },
 ];
 
 const router = createRouter({
