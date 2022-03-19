@@ -11,7 +11,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr :key="i" v-for="(prodㅇuct, i) in productList">
+        <tr :key="i" v-for="(product, i) in productList">
           <td>{{ product.product_name }}</td>
           <td>{{ product.price }}</td>
           <td>{{ product.category }}</td>
@@ -24,9 +24,10 @@
 
 <script>
 import ApiMixin from "../api.js";
+import MonitoringMixin from "../monitoring.js";
 
 export default {
-  mixins: [ApiMixin],
+  mixins: [ApiMixin, MonitoringMixin],
   components: {},
   data() {
     return {
