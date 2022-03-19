@@ -11,7 +11,7 @@
         </tr>
       </thead>
       <tbody>
-        <tr :key="i" v-for="(product, i) in productList">
+        <tr :key="i" v-for="(prodㅇuct, i) in productList">
           <td>{{ product.product_name }}</td>
           <td>{{ product.price }}</td>
           <td>{{ product.category }}</td>
@@ -35,7 +35,9 @@ export default {
   },
   setup() {},
   created() {},
-  mounted() {},
+  mounted() {
+    console.log("컴포넌트 mounted");
+  },
   unmounted() {},
   methods: {
     async getProductList() {
