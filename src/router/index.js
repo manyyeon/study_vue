@@ -79,6 +79,12 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/CalculatorExample.vue"),
   },
+  {
+    path: "/compositionApi",
+    name: "CompositionAPI",
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/CompositionAPI.vue"),
+  },
 ];
 
 const router = createRouter({
