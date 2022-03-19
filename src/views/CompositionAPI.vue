@@ -1,5 +1,7 @@
 <template>
   <div>
+    <div>CompositionAPI1</div>
+    <p></p>
     <input type="text" v-model.number="state.num1" @keyup="plusNumbers" />
     <span> + </span>
     <input type="text" v-model.number="state.num2" @keyup="plusNumbers" />
