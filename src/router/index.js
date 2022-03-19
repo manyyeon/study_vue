@@ -73,6 +73,12 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/MixinTest.vue"),
   },
+  {
+    path: "/calculator",
+    name: "Calculator",
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/CalculatorExample.vue"),
+  },
 ];
 
 const router = createRouter({
