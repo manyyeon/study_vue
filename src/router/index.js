@@ -67,6 +67,12 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/ProvideInject.vue"),
   },
+  {
+    path: "/mixin",
+    name: "MixinTest",
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/MixinTest.vue"),
+  },
 ];
 
 const router = createRouter({
