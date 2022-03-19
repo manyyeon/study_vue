@@ -117,6 +117,12 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/CustomDirective.vue"),
   },
+  {
+    path: "/plugins",
+    name: "PluginsExample",
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/PluginsExample.vue"),
+  },
 ];
 
 const router = createRouter({
