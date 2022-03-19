@@ -23,11 +23,11 @@
 </template>
 
 <script>
-import ApiMixin from "../api.js";
+// import ApiMixin from "../api.js";
 import MonitoringMixin from "../monitoring.js";
 
 export default {
-  mixins: [ApiMixin, MonitoringMixin],
+  mixins: [MonitoringMixin],
   components: {},
   data() {
     return {
@@ -42,7 +42,7 @@ export default {
   unmounted() {},
   methods: {
     async getProductList() {
-      this.productList = await this.$callAPI(
+      this.productList = await this.$api(
         "https://a1e284c5-db6b-4726-a0be-a72a59f81862.mock.pstmn.io/productList",
         "get",
         {}

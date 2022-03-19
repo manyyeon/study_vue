@@ -1,4 +1,8 @@
 export default {
-  mounted() {},
-  unmounted() {},
+  mounted() {
+    // 데이터베이스에 시간 저장
+  },
+  unmounted() {
+    // 데이터베이스에 시간 저장
+  },
 };
