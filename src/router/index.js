@@ -111,6 +111,12 @@ const routes = [
         /* webpackChunkName: "about" */ "../views/CompositionAPIProvide.vue"
       ),
   },
+  {
+    path: "/customDirective",
+    name: "CustomDirective",
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/CustomDirective.vue"),
+  },
 ];
 
 const router = createRouter({
