@@ -123,6 +123,12 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/PluginsExample.vue"),
   },
+  {
+    path: "/storeAccess",
+    name: "StoreAccess",
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/StoreAccess.vue"),
+  },
 ];
 
 const router = createRouter({
